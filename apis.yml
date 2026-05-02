@@ -10,7 +10,7 @@ type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/national-park-service/refs/heads/main/apis.yml
 created: '2024-12-03'
-modified: '2026-03-16'
+modified: '2026-04-28'
 specificationVersion: '0.19'
 tags:
   - Conservation
@@ -27,6 +27,14 @@ apis:
     properties:
       - url: https://www.nps.gov/subjects/developer/api-documentation.htm
         type: Documentation
+      - url: https://www.nps.gov/subjects/developer/get-started.htm
+        type: GettingStarted
+      - url: https://www.nps.gov/subjects/developer/guides.htm
+        type: Guides
+      - url: https://www.nps.gov/subjects/developer/api-key.htm
+        type: SignUp
+      - url: https://raw.githubusercontent.com/api-evangelist/national-park-service/refs/heads/main/openapi/national-park-service-openapi.yml
+        type: OpenAPI
     description: >-
       The NPS Data API is open and accessible to all developers, providing
       official, authoritative data and content about national parks, monuments,
