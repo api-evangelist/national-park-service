@@ -10,39 +10,41 @@ created: '2024-12-03'
 modified: '2026-05-19'
 specificationVersion: '0.19'
 tags:
-- Conservation
-- Federal Government
-- Parks
-apis:
-- aid: national-park-service:national-park-service
-  name: National Park Service API
-  tags:
   - Conservation
+  - Federal Government
   - Parks
-  humanURL: https://www.nps.gov/subjects/developer/api-documentation.htm
-  baseURL: https://developer.nps.gov/api/v1/
-  properties:
-  - url: https://www.nps.gov/subjects/developer/api-documentation.htm
-    type: Documentation
-  - url: https://www.nps.gov/subjects/developer/get-started.htm
-    type: GettingStarted
-  - url: https://www.nps.gov/subjects/developer/guides.htm
-    type: Guides
-  - url: https://www.nps.gov/subjects/developer/api-key.htm
-    type: SignUp
-  - url: https://raw.githubusercontent.com/api-evangelist/national-park-service/refs/heads/main/openapi/national-park-service-openapi.yml
-    type: OpenAPI
-  - type: NaftikoCapability
-    url: capabilities/national-park-service.yaml
-  description: The NPS Data API is open and accessible to all developers, providing official, authoritative data and content
-    about national parks, monuments, and historic sites for use in apps, maps, and other projects.
+apis:
+  - aid: national-park-service:national-park-service
+    name: National Park Service API
+    tags:
+    - Conservation
+    - Parks
+    humanURL: https://www.nps.gov/subjects/developer/api-documentation.htm
+    baseURL: https://developer.nps.gov/api/v1/
+    properties:
+    - url: https://www.nps.gov/subjects/developer/api-documentation.htm
+      type: Documentation
+    - url: https://www.nps.gov/subjects/developer/get-started.htm
+      type: GettingStarted
+    - url: https://www.nps.gov/subjects/developer/guides.htm
+      type: Guides
+    - url: https://www.nps.gov/subjects/developer/api-key.htm
+      type: SignUp
+    - url: https://raw.githubusercontent.com/api-evangelist/national-park-service/refs/heads/main/openapi/national-park-service-openapi.yml
+      type: OpenAPI
+    - type: NaftikoCapability
+      url: capabilities/national-park-service.yaml
+    description: The NPS Data API is open and accessible to all developers, providing official, authoritative data and content
+      about national parks, monuments, and historic sites for use in apps, maps, and other projects.
 common:
-- type: LinkedIn
-  url: https://www.linkedin.com/company/nationalparkservice
-- type: Website
-  url: https://www.nps.gov/
-- type: Portal
-  url: https://www.nps.gov/subjects/developer/index.htm
+  - type: GitHubOrganization
+    url: https://github.com/nationalparkservice
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/nationalparkservice
+  - type: Website
+    url: https://www.nps.gov/
+  - type: Portal
+    url: https://www.nps.gov/subjects/developer/index.htm
 maintainers:
-- FN: Kin Lane
-  email: kin@apievangelist.com
+  - FN: Kin Lane
+    email: kin@apievangelist.com
