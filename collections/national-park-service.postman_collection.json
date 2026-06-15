@@ -1,0 +1,1032 @@
+{
+  "item": [
+    {
+      "id": "0520b564-8347-4850-8611-18267c86cb4d",
+      "name": "Retrieve parks",
+      "request": {
+        "name": "Retrieve parks",
+        "description": {
+          "content": "Retrieve data about national parks (addresses, contacts, descriptions, hours, fees, etc.).",
+          "type": "text/plain"
+        },
+        "url": {
+          "path": [
+            "parks"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [
+            {
+              "disabled": false,
+              "key": "parkCode",
+              "value": "<string>",
+              "description": "Comma-delimited list of park codes (e.g., acad,dena)."
+            },
+            {
+              "disabled": false,
+              "key": "stateCode",
+              "value": "<string>",
+              "description": "Comma-delimited list of two-letter state codes."
+            },
+            {
+              "disabled": false,
+              "key": "q",
+              "value": "<string>",
+              "description": "Free-text search term."
+            },
+            {
+              "disabled": false,
+              "key": "limit",
+              "value": "50"
+            },
+            {
+              "disabled": false,
+              "key": "start",
+              "value": "0"
+            }
+          ],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "2e5bcf72-0c9d-42fc-9272-862c19df2154",
+          "name": "A page of park records.",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "parks"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "key": "parkCode",
+                  "value": "<string>"
+                },
+                {
+                  "key": "stateCode",
+                  "value": "<string>"
+                },
+                {
+                  "key": "q",
+                  "value": "<string>"
+                },
+                {
+                  "key": "limit",
+                  "value": "50"
+                },
+                {
+                  "key": "start",
+                  "value": "0"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "X-Api-Key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "aebfc5b1-fb45-4f37-8b8e-9b11beb68d6a",
+      "name": "Retrieve alerts",
+      "request": {
+        "name": "Retrieve alerts",
+        "description": {
+          "content": "Park alerts including caution, danger, closures, and information notices.",
+          "type": "text/plain"
+        },
+        "url": {
+          "path": [
+            "alerts"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [
+            {
+              "disabled": false,
+              "key": "parkCode",
+              "value": "<string>"
+            },
+            {
+              "disabled": false,
+              "key": "stateCode",
+              "value": "<string>"
+            },
+            {
+              "disabled": false,
+              "key": "q",
+              "value": "<string>"
+            },
+            {
+              "disabled": false,
+              "key": "limit",
+              "value": "50"
+            },
+            {
+              "disabled": false,
+              "key": "start",
+              "value": "0"
+            }
+          ],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "8e42d998-6229-4c65-abcd-0922dedaa0fb",
+          "name": "A page of alert records.",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "alerts"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "key": "parkCode",
+                  "value": "<string>"
+                },
+                {
+                  "key": "stateCode",
+                  "value": "<string>"
+                },
+                {
+                  "key": "q",
+                  "value": "<string>"
+                },
+                {
+                  "key": "limit",
+                  "value": "50"
+                },
+                {
+                  "key": "start",
+                  "value": "0"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "X-Api-Key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "03bad776-7464-409d-a876-38e71ee21b50",
+      "name": "Retrieve news releases",
+      "request": {
+        "name": "Retrieve news releases",
+        "description": {},
+        "url": {
+          "path": [
+            "newsreleases"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [
+            {
+              "disabled": false,
+              "key": "parkCode",
+              "value": "<string>"
+            },
+            {
+              "disabled": false,
+              "key": "q",
+              "value": "<string>"
+            },
+            {
+              "disabled": false,
+              "key": "limit",
+              "value": "50"
+            }
+          ],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "13a8dd4f-4bdf-4865-9ccd-f1e9295300ee",
+          "name": "News releases.",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "newsreleases"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "key": "parkCode",
+                  "value": "<string>"
+                },
+                {
+                  "key": "q",
+                  "value": "<string>"
+                },
+                {
+                  "key": "limit",
+                  "value": "50"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "X-Api-Key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "1d77f9fc-61f3-43fa-af28-6f0a5b4ecbd2",
+      "name": "Retrieve events",
+      "request": {
+        "name": "Retrieve events",
+        "description": {},
+        "url": {
+          "path": [
+            "events"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [
+            {
+              "disabled": false,
+              "key": "parkCode",
+              "value": "<string>"
+            },
+            {
+              "disabled": false,
+              "key": "stateCode",
+              "value": "<string>"
+            },
+            {
+              "disabled": false,
+              "key": "dateStart",
+              "value": "<date>"
+            },
+            {
+              "disabled": false,
+              "key": "dateEnd",
+              "value": "<date>"
+            }
+          ],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "390d5ea0-03b4-4e0b-84c1-ae00da11c1ea",
+          "name": "Events.",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "events"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "key": "parkCode",
+                  "value": "<string>"
+                },
+                {
+                  "key": "stateCode",
+                  "value": "<string>"
+                },
+                {
+                  "key": "dateStart",
+                  "value": "<date>"
+                },
+                {
+                  "key": "dateEnd",
+                  "value": "<date>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "X-Api-Key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "b7e06835-6617-4341-a799-7921885115d7",
+      "name": "Retrieve places",
+      "request": {
+        "name": "Retrieve places",
+        "description": {},
+        "url": {
+          "path": [
+            "places"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [
+            {
+              "disabled": false,
+              "key": "parkCode",
+              "value": "<string>"
+            },
+            {
+              "disabled": false,
+              "key": "stateCode",
+              "value": "<string>"
+            },
+            {
+              "disabled": false,
+              "key": "q",
+              "value": "<string>"
+            }
+          ],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "7ac14c44-2cd3-4e7f-b4fc-ed0e4cde0e1a",
+          "name": "Places.",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "places"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "key": "parkCode",
+                  "value": "<string>"
+                },
+                {
+                  "key": "stateCode",
+                  "value": "<string>"
+                },
+                {
+                  "key": "q",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "X-Api-Key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "4d01691f-23fb-4440-a80c-020040f10398",
+      "name": "Retrieve visitor centers",
+      "request": {
+        "name": "Retrieve visitor centers",
+        "description": {},
+        "url": {
+          "path": [
+            "visitorcenters"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [
+            {
+              "disabled": false,
+              "key": "parkCode",
+              "value": "<string>"
+            },
+            {
+              "disabled": false,
+              "key": "stateCode",
+              "value": "<string>"
+            }
+          ],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "e865f675-aca6-4450-95bc-7820887e4d45",
+          "name": "Visitor centers.",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "visitorcenters"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "key": "parkCode",
+                  "value": "<string>"
+                },
+                {
+                  "key": "stateCode",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "X-Api-Key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "262ebed8-dc90-44ce-8ab5-fb0ddd777ae1",
+      "name": "Retrieve campgrounds",
+      "request": {
+        "name": "Retrieve campgrounds",
+        "description": {},
+        "url": {
+          "path": [
+            "campgrounds"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [
+            {
+              "disabled": false,
+              "key": "parkCode",
+              "value": "<string>"
+            },
+            {
+              "disabled": false,
+              "key": "stateCode",
+              "value": "<string>"
+            }
+          ],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "9e57ebce-2e3c-4526-b360-27df3d25582b",
+          "name": "Campgrounds.",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "campgrounds"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "key": "parkCode",
+                  "value": "<string>"
+                },
+                {
+                  "key": "stateCode",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "X-Api-Key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "b0b2b7e4-5568-46f6-914c-13695af2c5e9",
+      "name": "Retrieve articles",
+      "request": {
+        "name": "Retrieve articles",
+        "description": {},
+        "url": {
+          "path": [
+            "articles"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [
+            {
+              "disabled": false,
+              "key": "parkCode",
+              "value": "<string>"
+            },
+            {
+              "disabled": false,
+              "key": "q",
+              "value": "<string>"
+            }
+          ],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "bc99e923-4515-4657-ab59-16095775ea85",
+          "name": "Articles.",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "articles"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "key": "parkCode",
+                  "value": "<string>"
+                },
+                {
+                  "key": "q",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "X-Api-Key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "9db87645-5afc-4b5b-9e88-5fec82308a3f",
+      "name": "Retrieve historical people",
+      "request": {
+        "name": "Retrieve historical people",
+        "description": {},
+        "url": {
+          "path": [
+            "people"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [
+            {
+              "disabled": false,
+              "key": "parkCode",
+              "value": "<string>"
+            },
+            {
+              "disabled": false,
+              "key": "q",
+              "value": "<string>"
+            }
+          ],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "c7ac7cea-b929-4a1a-b81d-a663c8030558",
+          "name": "People.",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "people"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "key": "parkCode",
+                  "value": "<string>"
+                },
+                {
+                  "key": "q",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "X-Api-Key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "1545a307-a957-4d90-a572-4eabc87224d1",
+      "name": "List activities available within parks",
+      "request": {
+        "name": "List activities available within parks",
+        "description": {},
+        "url": {
+          "path": [
+            "activities"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "6dc7ea80-e9ac-4408-8f0f-04ae92001dcd",
+          "name": "Activities.",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "activities"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "X-Api-Key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "35a6af6a-bb84-4ad1-84d5-e2d8c385e456",
+      "name": "List topics covered by NPS",
+      "request": {
+        "name": "List topics covered by NPS",
+        "description": {},
+        "url": {
+          "path": [
+            "topics"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "0d4c114c-c839-4a00-97d5-76f916ed5278",
+          "name": "Topics.",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "topics"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "X-Api-Key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://developer.nps.gov/api/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "X-Api-Key"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "a130a83d-0dbe-4c24-afb6-2e4f905bb7f4",
+    "name": "National Park Service Data API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The NPS Data API provides official, authoritative data and content about United States national parks, monuments, and historic sites. The API delivers information about parks, alerts, news releases, events, places, visitor centers, campgrounds, articles, people, and more.\n\nContact Support:\n Name: National Park Service Developer Resources",
+      "type": "text/plain"
+    }
+  }
+}

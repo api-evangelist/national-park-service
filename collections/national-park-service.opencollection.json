@@ -1,0 +1,300 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "National Park Service Data API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-Api-Key",
+      "value": "{{X-Api-Key}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Retrieve parks",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://developer.nps.gov/api/v1/parks",
+        "params": [
+          {
+            "name": "parkCode",
+            "value": "",
+            "type": "query",
+            "description": "Comma-delimited list of park codes (e.g., acad,dena)."
+          },
+          {
+            "name": "stateCode",
+            "value": "",
+            "type": "query",
+            "description": "Comma-delimited list of two-letter state codes."
+          },
+          {
+            "name": "q",
+            "value": "",
+            "type": "query",
+            "description": "Free-text search term."
+          },
+          {
+            "name": "limit",
+            "value": "",
+            "type": "query"
+          },
+          {
+            "name": "start",
+            "value": "",
+            "type": "query"
+          }
+        ]
+      },
+      "docs": "Retrieve data about national parks (addresses, contacts, descriptions, hours, fees, etc.)."
+    },
+    {
+      "info": {
+        "name": "Retrieve alerts",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://developer.nps.gov/api/v1/alerts",
+        "params": [
+          {
+            "name": "parkCode",
+            "value": "",
+            "type": "query"
+          },
+          {
+            "name": "stateCode",
+            "value": "",
+            "type": "query"
+          },
+          {
+            "name": "q",
+            "value": "",
+            "type": "query"
+          },
+          {
+            "name": "limit",
+            "value": "",
+            "type": "query"
+          },
+          {
+            "name": "start",
+            "value": "",
+            "type": "query"
+          }
+        ]
+      },
+      "docs": "Park alerts including caution, danger, closures, and information notices."
+    },
+    {
+      "info": {
+        "name": "Retrieve news releases",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://developer.nps.gov/api/v1/newsreleases",
+        "params": [
+          {
+            "name": "parkCode",
+            "value": "",
+            "type": "query"
+          },
+          {
+            "name": "q",
+            "value": "",
+            "type": "query"
+          },
+          {
+            "name": "limit",
+            "value": "",
+            "type": "query"
+          }
+        ]
+      },
+      "docs": "Retrieve news releases"
+    },
+    {
+      "info": {
+        "name": "Retrieve events",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://developer.nps.gov/api/v1/events",
+        "params": [
+          {
+            "name": "parkCode",
+            "value": "",
+            "type": "query"
+          },
+          {
+            "name": "stateCode",
+            "value": "",
+            "type": "query"
+          },
+          {
+            "name": "dateStart",
+            "value": "",
+            "type": "query"
+          },
+          {
+            "name": "dateEnd",
+            "value": "",
+            "type": "query"
+          }
+        ]
+      },
+      "docs": "Retrieve events"
+    },
+    {
+      "info": {
+        "name": "Retrieve places",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://developer.nps.gov/api/v1/places",
+        "params": [
+          {
+            "name": "parkCode",
+            "value": "",
+            "type": "query"
+          },
+          {
+            "name": "stateCode",
+            "value": "",
+            "type": "query"
+          },
+          {
+            "name": "q",
+            "value": "",
+            "type": "query"
+          }
+        ]
+      },
+      "docs": "Retrieve places"
+    },
+    {
+      "info": {
+        "name": "Retrieve visitor centers",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://developer.nps.gov/api/v1/visitorcenters",
+        "params": [
+          {
+            "name": "parkCode",
+            "value": "",
+            "type": "query"
+          },
+          {
+            "name": "stateCode",
+            "value": "",
+            "type": "query"
+          }
+        ]
+      },
+      "docs": "Retrieve visitor centers"
+    },
+    {
+      "info": {
+        "name": "Retrieve campgrounds",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://developer.nps.gov/api/v1/campgrounds",
+        "params": [
+          {
+            "name": "parkCode",
+            "value": "",
+            "type": "query"
+          },
+          {
+            "name": "stateCode",
+            "value": "",
+            "type": "query"
+          }
+        ]
+      },
+      "docs": "Retrieve campgrounds"
+    },
+    {
+      "info": {
+        "name": "Retrieve articles",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://developer.nps.gov/api/v1/articles",
+        "params": [
+          {
+            "name": "parkCode",
+            "value": "",
+            "type": "query"
+          },
+          {
+            "name": "q",
+            "value": "",
+            "type": "query"
+          }
+        ]
+      },
+      "docs": "Retrieve articles"
+    },
+    {
+      "info": {
+        "name": "Retrieve historical people",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://developer.nps.gov/api/v1/people",
+        "params": [
+          {
+            "name": "parkCode",
+            "value": "",
+            "type": "query"
+          },
+          {
+            "name": "q",
+            "value": "",
+            "type": "query"
+          }
+        ]
+      },
+      "docs": "Retrieve historical people"
+    },
+    {
+      "info": {
+        "name": "List activities available within parks",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://developer.nps.gov/api/v1/activities"
+      },
+      "docs": "List activities available within parks"
+    },
+    {
+      "info": {
+        "name": "List topics covered by NPS",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://developer.nps.gov/api/v1/topics"
+      },
+      "docs": "List topics covered by NPS"
+    }
+  ],
+  "bundled": true
+}
