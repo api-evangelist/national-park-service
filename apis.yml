@@ -5,7 +5,7 @@ description: >-
   parks, monuments, and historic sites. Established in 1916, the NPS works to preserve natural and cultural resources
   for future generations while providing opportunities for the public to enjoy and learn from these special places.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/national-park-service/refs/heads/main/apis.yml
 created: '2024-12-03'
 modified: '2026-05-19'
