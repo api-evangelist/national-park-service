@@ -30,7 +30,7 @@ apis:
       - url: https://www.nps.gov/subjects/developer/guides.htm
         type: Guides
       - url: https://www.nps.gov/subjects/developer/api-key.htm
-        type: SignUp
+        type: Signup
       - url: >-
           https://raw.githubusercontent.com/api-evangelist/national-park-service/refs/heads/main/openapi/national-park-service-openapi.yml
         type: OpenAPI
