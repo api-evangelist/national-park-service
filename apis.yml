@@ -38,6 +38,8 @@ apis:
       The NPS Data API is open and accessible to all developers, providing official, authoritative data and content
       about national parks, monuments, and historic sites for use in apps, maps, and other projects.
 common:
+  - type: AgenticAccess
+    url: agentic-access/national-park-service-agentic-access.yml
   - type: DomainSecurity
     url: security/national-park-service-domain-security.yml
   - type: Authentication
