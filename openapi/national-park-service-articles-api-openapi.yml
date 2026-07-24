@@ -1,0 +1,39 @@
+openapi: 3.0.3
+info:
+  title: National Park Service Data Activities Articles API
+  description: The NPS Data API provides official, authoritative data and content about United States national parks, monuments, and historic sites. The API delivers information about parks, alerts, news releases, events, places, visitor centers, campgrounds, articles, people, and more.
+  version: 1.0.0
+  contact:
+    name: National Park Service Developer Resources
+    url: https://www.nps.gov/subjects/developer/api-documentation.htm
+servers:
+- url: https://developer.nps.gov/api/v1
+  description: Production
+security:
+- apiKey: []
+tags:
+- name: Articles
+paths:
+  /articles:
+    get:
+      summary: Retrieve articles
+      parameters:
+      - name: parkCode
+        in: query
+        schema:
+          type: string
+      - name: q
+        in: query
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Articles.
+      tags:
+      - Articles
+components:
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: header
+      name: X-Api-Key
