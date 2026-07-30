@@ -5,7 +5,20 @@ description: >-
   parks, monuments, and historic sites. Established in 1916, the NPS works to preserve natural and cultural resources
   for future generations while providing opportunities for the public to enjoy and learn from these special places.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/national-park-service.png
 url: https://raw.githubusercontent.com/api-evangelist/national-park-service/refs/heads/main/apis.yml
 created: '2024-12-03'
 modified: '2026-05-19'
@@ -15,28 +28,204 @@ tags:
   - Federal Government
   - Parks
 apis:
-  - aid: national-park-service:national-park-service
-    name: National Park Service API
-    tags:
-      - Conservation
-      - Parks
-    humanURL: https://www.nps.gov/subjects/developer/api-documentation.htm
-    baseURL: https://developer.nps.gov/api/v1/
-    properties:
-      - url: https://www.nps.gov/subjects/developer/api-documentation.htm
-        type: Documentation
-      - url: https://www.nps.gov/subjects/developer/get-started.htm
-        type: GettingStarted
-      - url: https://www.nps.gov/subjects/developer/guides.htm
-        type: Guides
-      - url: https://www.nps.gov/subjects/developer/api-key.htm
-        type: Signup
-      - url: >-
-          https://raw.githubusercontent.com/api-evangelist/national-park-service/refs/heads/main/openapi/national-park-service-openapi.yml
-        type: OpenAPI
-    description: >-
-      The NPS Data API is open and accessible to all developers, providing official, authoritative data and content
-      about national parks, monuments, and historic sites for use in apps, maps, and other projects.
+- aid: national-park-service:national-park-service-activities-api
+  name: National Park Service Activities API
+  description: The Activities API from National Park Service — 1 operation(s) for activities.
+  humanURL: https://www.nps.gov/subjects/developer/api-documentation.htm
+  baseURL: https://developer.nps.gov/api/v1/
+  tags:
+  - Activities
+  properties:
+  - type: OpenAPI
+    url: openapi/national-park-service-activities-api-openapi.yml
+  - type: Documentation
+    url: https://www.nps.gov/subjects/developer/api-documentation.htm
+  - type: GettingStarted
+    url: https://www.nps.gov/subjects/developer/get-started.htm
+  - type: Guides
+    url: https://www.nps.gov/subjects/developer/guides.htm
+  - type: Signup
+    url: https://www.nps.gov/subjects/developer/api-key.htm
+- aid: national-park-service:national-park-service-alerts-api
+  name: National Park Service Alerts API
+  description: The Alerts API from National Park Service — 1 operation(s) for alerts.
+  humanURL: https://www.nps.gov/subjects/developer/api-documentation.htm
+  baseURL: https://developer.nps.gov/api/v1/
+  tags:
+  - Alerts
+  properties:
+  - type: OpenAPI
+    url: openapi/national-park-service-alerts-api-openapi.yml
+  - type: Documentation
+    url: https://www.nps.gov/subjects/developer/api-documentation.htm
+  - type: GettingStarted
+    url: https://www.nps.gov/subjects/developer/get-started.htm
+  - type: Guides
+    url: https://www.nps.gov/subjects/developer/guides.htm
+  - type: Signup
+    url: https://www.nps.gov/subjects/developer/api-key.htm
+- aid: national-park-service:national-park-service-articles-api
+  name: National Park Service Articles API
+  description: The Articles API from National Park Service — 1 operation(s) for articles.
+  humanURL: https://www.nps.gov/subjects/developer/api-documentation.htm
+  baseURL: https://developer.nps.gov/api/v1/
+  tags:
+  - Articles
+  properties:
+  - type: OpenAPI
+    url: openapi/national-park-service-articles-api-openapi.yml
+  - type: Documentation
+    url: https://www.nps.gov/subjects/developer/api-documentation.htm
+  - type: GettingStarted
+    url: https://www.nps.gov/subjects/developer/get-started.htm
+  - type: Guides
+    url: https://www.nps.gov/subjects/developer/guides.htm
+  - type: Signup
+    url: https://www.nps.gov/subjects/developer/api-key.htm
+- aid: national-park-service:national-park-service-campgrounds-api
+  name: National Park Service Campgrounds API
+  description: The Campgrounds API from National Park Service — 1 operation(s) for campgrounds.
+  humanURL: https://www.nps.gov/subjects/developer/api-documentation.htm
+  baseURL: https://developer.nps.gov/api/v1/
+  tags:
+  - Campgrounds
+  properties:
+  - type: OpenAPI
+    url: openapi/national-park-service-campgrounds-api-openapi.yml
+  - type: Documentation
+    url: https://www.nps.gov/subjects/developer/api-documentation.htm
+  - type: GettingStarted
+    url: https://www.nps.gov/subjects/developer/get-started.htm
+  - type: Guides
+    url: https://www.nps.gov/subjects/developer/guides.htm
+  - type: Signup
+    url: https://www.nps.gov/subjects/developer/api-key.htm
+- aid: national-park-service:national-park-service-events-api
+  name: National Park Service Events API
+  description: The Events API from National Park Service — 1 operation(s) for events.
+  humanURL: https://www.nps.gov/subjects/developer/api-documentation.htm
+  baseURL: https://developer.nps.gov/api/v1/
+  tags:
+  - Events
+  properties:
+  - type: OpenAPI
+    url: openapi/national-park-service-events-api-openapi.yml
+  - type: Documentation
+    url: https://www.nps.gov/subjects/developer/api-documentation.htm
+  - type: GettingStarted
+    url: https://www.nps.gov/subjects/developer/get-started.htm
+  - type: Guides
+    url: https://www.nps.gov/subjects/developer/guides.htm
+  - type: Signup
+    url: https://www.nps.gov/subjects/developer/api-key.htm
+- aid: national-park-service:national-park-service-newsreleases-api
+  name: National Park Service Newsreleases API
+  description: The Newsreleases API from National Park Service — 1 operation(s) for newsreleases.
+  humanURL: https://www.nps.gov/subjects/developer/api-documentation.htm
+  baseURL: https://developer.nps.gov/api/v1/
+  tags:
+  - Newsreleases
+  properties:
+  - type: OpenAPI
+    url: openapi/national-park-service-newsreleases-api-openapi.yml
+  - type: Documentation
+    url: https://www.nps.gov/subjects/developer/api-documentation.htm
+  - type: GettingStarted
+    url: https://www.nps.gov/subjects/developer/get-started.htm
+  - type: Guides
+    url: https://www.nps.gov/subjects/developer/guides.htm
+  - type: Signup
+    url: https://www.nps.gov/subjects/developer/api-key.htm
+- aid: national-park-service:national-park-service-parks-api
+  name: National Park Service Parks API
+  description: The Parks API from National Park Service — 1 operation(s) for parks.
+  humanURL: https://www.nps.gov/subjects/developer/api-documentation.htm
+  baseURL: https://developer.nps.gov/api/v1/
+  tags:
+  - Parks
+  properties:
+  - type: OpenAPI
+    url: openapi/national-park-service-parks-api-openapi.yml
+  - type: Documentation
+    url: https://www.nps.gov/subjects/developer/api-documentation.htm
+  - type: GettingStarted
+    url: https://www.nps.gov/subjects/developer/get-started.htm
+  - type: Guides
+    url: https://www.nps.gov/subjects/developer/guides.htm
+  - type: Signup
+    url: https://www.nps.gov/subjects/developer/api-key.htm
+- aid: national-park-service:national-park-service-people-api
+  name: National Park Service People API
+  description: The People API from National Park Service — 1 operation(s) for people.
+  humanURL: https://www.nps.gov/subjects/developer/api-documentation.htm
+  baseURL: https://developer.nps.gov/api/v1/
+  tags:
+  - People
+  properties:
+  - type: OpenAPI
+    url: openapi/national-park-service-people-api-openapi.yml
+  - type: Documentation
+    url: https://www.nps.gov/subjects/developer/api-documentation.htm
+  - type: GettingStarted
+    url: https://www.nps.gov/subjects/developer/get-started.htm
+  - type: Guides
+    url: https://www.nps.gov/subjects/developer/guides.htm
+  - type: Signup
+    url: https://www.nps.gov/subjects/developer/api-key.htm
+- aid: national-park-service:national-park-service-places-api
+  name: National Park Service Places API
+  description: The Places API from National Park Service — 1 operation(s) for places.
+  humanURL: https://www.nps.gov/subjects/developer/api-documentation.htm
+  baseURL: https://developer.nps.gov/api/v1/
+  tags:
+  - Places
+  properties:
+  - type: OpenAPI
+    url: openapi/national-park-service-places-api-openapi.yml
+  - type: Documentation
+    url: https://www.nps.gov/subjects/developer/api-documentation.htm
+  - type: GettingStarted
+    url: https://www.nps.gov/subjects/developer/get-started.htm
+  - type: Guides
+    url: https://www.nps.gov/subjects/developer/guides.htm
+  - type: Signup
+    url: https://www.nps.gov/subjects/developer/api-key.htm
+- aid: national-park-service:national-park-service-topics-api
+  name: National Park Service Topics API
+  description: The Topics API from National Park Service — 1 operation(s) for topics.
+  humanURL: https://www.nps.gov/subjects/developer/api-documentation.htm
+  baseURL: https://developer.nps.gov/api/v1/
+  tags:
+  - Topics
+  properties:
+  - type: OpenAPI
+    url: openapi/national-park-service-topics-api-openapi.yml
+  - type: Documentation
+    url: https://www.nps.gov/subjects/developer/api-documentation.htm
+  - type: GettingStarted
+    url: https://www.nps.gov/subjects/developer/get-started.htm
+  - type: Guides
+    url: https://www.nps.gov/subjects/developer/guides.htm
+  - type: Signup
+    url: https://www.nps.gov/subjects/developer/api-key.htm
+- aid: national-park-service:national-park-service-visitorcenters-api
+  name: National Park Service Visitorcenters API
+  description: The Visitorcenters API from National Park Service — 1 operation(s) for visitorcenters.
+  humanURL: https://www.nps.gov/subjects/developer/api-documentation.htm
+  baseURL: https://developer.nps.gov/api/v1/
+  tags:
+  - Visitorcenters
+  properties:
+  - type: OpenAPI
+    url: openapi/national-park-service-visitorcenters-api-openapi.yml
+  - type: Documentation
+    url: https://www.nps.gov/subjects/developer/api-documentation.htm
+  - type: GettingStarted
+    url: https://www.nps.gov/subjects/developer/get-started.htm
+  - type: Guides
+    url: https://www.nps.gov/subjects/developer/guides.htm
+  - type: Signup
+    url: https://www.nps.gov/subjects/developer/api-key.htm
 common:
   - type: AgenticAccess
     url: agentic-access/national-park-service-agentic-access.yml
