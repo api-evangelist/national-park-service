@@ -1,0 +1,34 @@
+{
+  "provider": "national-park-service",
+  "sources": [
+    "national-park-service-activities-api-openapi.yml",
+    "national-park-service-alerts-api-openapi.yml",
+    "national-park-service-articles-api-openapi.yml",
+    "national-park-service-campgrounds-api-openapi.yml",
+    "national-park-service-events-api-openapi.yml",
+    "national-park-service-newsreleases-api-openapi.yml",
+    "national-park-service-parks-api-openapi.yml",
+    "national-park-service-people-api-openapi.yml",
+    "national-park-service-places-api-openapi.yml",
+    "national-park-service-topics-api-openapi.yml",
+    "national-park-service-visitorcenters-api-openapi.yml"
+  ],
+  "outputs": [
+    "national-park-service-activities-api-openapi.yml",
+    "national-park-service-alerts-api-openapi.yml",
+    "national-park-service-articles-api-openapi.yml",
+    "national-park-service-campgrounds-api-openapi.yml",
+    "national-park-service-events-api-openapi.yml",
+    "national-park-service-newsreleases-api-openapi.yml",
+    "national-park-service-parks-api-openapi.yml",
+    "national-park-service-people-api-openapi.yml",
+    "national-park-service-places-api-openapi.yml",
+    "national-park-service-topics-api-openapi.yml",
+    "national-park-service-visitorcenters-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
