@@ -1,0 +1,49 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "National Park Service Data Activities Articles API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-Api-Key",
+      "value": "{{X-Api-Key}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Articles",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Retrieve articles",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://developer.nps.gov/api/v1/articles",
+            "params": [
+              {
+                "name": "parkCode",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "q",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Retrieve articles"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

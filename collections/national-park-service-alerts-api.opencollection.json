@@ -1,0 +1,64 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "National Park Service Data Activities Alerts API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-Api-Key",
+      "value": "{{X-Api-Key}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Alerts",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Retrieve alerts",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://developer.nps.gov/api/v1/alerts",
+            "params": [
+              {
+                "name": "parkCode",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "stateCode",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "q",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "limit",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "start",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Park alerts including caution, danger, closures, and information notices."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

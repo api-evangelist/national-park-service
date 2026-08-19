@@ -1,0 +1,59 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "National Park Service Data Activities Events API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-Api-Key",
+      "value": "{{X-Api-Key}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Events",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Retrieve events",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://developer.nps.gov/api/v1/events",
+            "params": [
+              {
+                "name": "parkCode",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "stateCode",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "dateStart",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "dateEnd",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Retrieve events"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,114 @@
+{
+  "item": [
+    {
+      "id": "9a609d6a-ca2d-4646-b913-c5fa5512602c",
+      "name": "Topics",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "db369249-982a-41c1-b2ca-73ddf133a93b",
+          "name": "List topics covered by NPS",
+          "request": {
+            "name": "List topics covered by NPS",
+            "description": {},
+            "url": {
+              "path": [
+                "topics"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "a8b034aa-a623-4498-abde-741b9752ea38",
+              "name": "Topics.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "topics"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Api-Key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://developer.nps.gov/api/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "X-Api-Key"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "375892a5-5074-49b2-95a9-c01764e412ee",
+    "name": "National Park Service Data Activities Topics API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The NPS Data API provides official, authoritative data and content about United States national parks, monuments, and historic sites. The API delivers information about parks, alerts, news releases, events, places, visitor centers, campgrounds, articles, people, and more.\n\nContact Support:\n Name: National Park Service Developer Resources",
+      "type": "text/plain"
+    }
+  }
+}

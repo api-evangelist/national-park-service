@@ -1,0 +1,167 @@
+{
+  "item": [
+    {
+      "id": "678e7c6e-7bf1-40cf-92e3-74bb2f38e958",
+      "name": "Parks",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "63f69d0e-e786-4e1a-9084-f589262f5eb9",
+          "name": "Retrieve parks",
+          "request": {
+            "name": "Retrieve parks",
+            "description": {
+              "content": "Retrieve data about national parks (addresses, contacts, descriptions, hours, fees, etc.).",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "parks"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "parkCode",
+                  "value": "<string>",
+                  "description": "Comma-delimited list of park codes (e.g., acad,dena)."
+                },
+                {
+                  "disabled": false,
+                  "key": "stateCode",
+                  "value": "<string>",
+                  "description": "Comma-delimited list of two-letter state codes."
+                },
+                {
+                  "disabled": false,
+                  "key": "q",
+                  "value": "<string>",
+                  "description": "Free-text search term."
+                },
+                {
+                  "disabled": false,
+                  "key": "limit",
+                  "value": "50"
+                },
+                {
+                  "disabled": false,
+                  "key": "start",
+                  "value": "0"
+                }
+              ],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "36416965-707f-4287-a8e7-0678d9e05c2c",
+              "name": "A page of park records.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "parks"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "parkCode",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "stateCode",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "q",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "limit",
+                      "value": "50"
+                    },
+                    {
+                      "key": "start",
+                      "value": "0"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Api-Key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://developer.nps.gov/api/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "X-Api-Key"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "2d787e85-9d96-4047-8c18-7ee8118d8cd9",
+    "name": "National Park Service Data Activities Parks API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The NPS Data API provides official, authoritative data and content about United States national parks, monuments, and historic sites. The API delivers information about parks, alerts, news releases, events, places, visitor centers, campgrounds, articles, people, and more.\n\nContact Support:\n Name: National Park Service Developer Resources",
+      "type": "text/plain"
+    }
+  }
+}

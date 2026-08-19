@@ -1,0 +1,67 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "National Park Service Data Activities Parks API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-Api-Key",
+      "value": "{{X-Api-Key}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Parks",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Retrieve parks",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://developer.nps.gov/api/v1/parks",
+            "params": [
+              {
+                "name": "parkCode",
+                "value": "",
+                "type": "query",
+                "description": "Comma-delimited list of park codes (e.g., acad,dena)."
+              },
+              {
+                "name": "stateCode",
+                "value": "",
+                "type": "query",
+                "description": "Comma-delimited list of two-letter state codes."
+              },
+              {
+                "name": "q",
+                "value": "",
+                "type": "query",
+                "description": "Free-text search term."
+              },
+              {
+                "name": "limit",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "start",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Retrieve data about national parks (addresses, contacts, descriptions, hours, fees, etc.)."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

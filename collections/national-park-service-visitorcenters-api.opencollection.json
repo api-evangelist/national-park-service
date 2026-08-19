@@ -1,0 +1,49 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "National Park Service Data Activities Visitorcenters API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-Api-Key",
+      "value": "{{X-Api-Key}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Visitorcenters",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Retrieve visitor centers",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://developer.nps.gov/api/v1/visitorcenters",
+            "params": [
+              {
+                "name": "parkCode",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "stateCode",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Retrieve visitor centers"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
