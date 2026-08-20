@@ -25,6 +25,10 @@ modified: '2026-05-19'
 specificationVersion: '0.23'
 tags:
   - Conservation
+  - Federal-Government
+  - Parks
+tags_raw:
+  - Conservation
   - Federal Government
   - Parks
 apis:
@@ -106,6 +110,8 @@ apis:
   humanURL: https://www.nps.gov/subjects/developer/api-documentation.htm
   baseURL: https://developer.nps.gov/api/v1/
   tags:
+  - Event
+  tags_raw:
   - Events
   properties:
   - type: OpenAPI
@@ -124,6 +130,8 @@ apis:
   humanURL: https://www.nps.gov/subjects/developer/api-documentation.htm
   baseURL: https://developer.nps.gov/api/v1/
   tags:
+  - News Releases
+  tags_raw:
   - Newsreleases
   properties:
   - type: OpenAPI
@@ -214,6 +222,8 @@ apis:
   humanURL: https://www.nps.gov/subjects/developer/api-documentation.htm
   baseURL: https://developer.nps.gov/api/v1/
   tags:
+  - VisitorCenters
+  tags_raw:
   - Visitorcenters
   properties:
   - type: OpenAPI
