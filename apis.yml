@@ -5,6 +5,18 @@ description: >-
   parks, monuments, and historic sites. Established in 1916, the NPS works to preserve natural and cultural resources
   for future generations while providing opportunities for the public to enjoy and learn from these special places.
 type: Index
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: true
+  label: Hosted service · you call their endpoint
+  confidence: high
+  source:
+  - openapi
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: self-serve
