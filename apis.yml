@@ -142,7 +142,7 @@ apis:
   humanURL: https://www.nps.gov/subjects/developer/api-documentation.htm
   baseURL: https://developer.nps.gov/api/v1/
   tags:
-  - Newsreleases
+  - News Releases
   tags_raw:
   - Newsreleases
   properties:
@@ -234,7 +234,7 @@ apis:
   humanURL: https://www.nps.gov/subjects/developer/api-documentation.htm
   baseURL: https://developer.nps.gov/api/v1/
   tags:
-  - Visitorcenters
+  - VisitorCenters
   tags_raw:
   - Visitorcenters
   properties:
