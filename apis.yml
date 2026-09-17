@@ -137,26 +137,6 @@ apis:
     url: https://www.nps.gov/subjects/developer/guides.htm
   - type: Signup
     url: https://www.nps.gov/subjects/developer/api-key.htm
-- aid: national-park-service:national-park-service-newsreleases-api
-  name: National Park Service Newsreleases API
-  description: The Newsreleases API from National Park Service — 1 operation(s) for newsreleases.
-  humanURL: https://www.nps.gov/subjects/developer/api-documentation.htm
-  baseURL: https://developer.nps.gov/api/v1/
-  tags:
-  - News Releases
-  tags_raw:
-  - Newsreleases
-  properties:
-  - type: OpenAPI
-    url: openapi/national-park-service-newsreleases-api-openapi.yml
-  - type: Documentation
-    url: https://www.nps.gov/subjects/developer/api-documentation.htm
-  - type: GettingStarted
-    url: https://www.nps.gov/subjects/developer/get-started.htm
-  - type: Guides
-    url: https://www.nps.gov/subjects/developer/guides.htm
-  - type: Signup
-    url: https://www.nps.gov/subjects/developer/api-key.htm
 - aid: national-park-service:national-park-service-parks-api
   name: National Park Service Parks API
   description: The Parks API from National Park Service — 1 operation(s) for parks.
@@ -229,18 +209,34 @@ apis:
     url: https://www.nps.gov/subjects/developer/guides.htm
   - type: Signup
     url: https://www.nps.gov/subjects/developer/api-key.htm
-- aid: national-park-service:national-park-service-visitorcenters-api
-  name: National Park Service Visitorcenters API
-  description: The Visitorcenters API from National Park Service — 1 operation(s) for visitorcenters.
+- aid: national-park-service:national-park-service-news-releases-api
+  name: National Park Service News Releases API
+  description: The News Releases API from National Park Service — 1 operation(s) for news releases.
   humanURL: https://www.nps.gov/subjects/developer/api-documentation.htm
   baseURL: https://developer.nps.gov/api/v1/
   tags:
-  - VisitorCenters
-  tags_raw:
-  - Visitorcenters
+  - News Releases
   properties:
   - type: OpenAPI
-    url: openapi/national-park-service-visitorcenters-api-openapi.yml
+    url: openapi/national-park-service-news-releases-api-openapi.yml
+  - type: Documentation
+    url: https://www.nps.gov/subjects/developer/api-documentation.htm
+  - type: GettingStarted
+    url: https://www.nps.gov/subjects/developer/get-started.htm
+  - type: Guides
+    url: https://www.nps.gov/subjects/developer/guides.htm
+  - type: Signup
+    url: https://www.nps.gov/subjects/developer/api-key.htm
+- aid: national-park-service:national-park-service-visitor-centers-api
+  name: National Park Service Visitor Centers API
+  description: The Visitor Centers API from National Park Service — 1 operation(s) for visitor centers.
+  humanURL: https://www.nps.gov/subjects/developer/api-documentation.htm
+  baseURL: https://developer.nps.gov/api/v1/
+  tags:
+  - Visitor Centers
+  properties:
+  - type: OpenAPI
+    url: openapi/national-park-service-visitor-centers-api-openapi.yml
   - type: Documentation
     url: https://www.nps.gov/subjects/developer/api-documentation.htm
   - type: GettingStarted
