@@ -197,6 +197,8 @@ apis:
   humanURL: https://www.nps.gov/subjects/developer/api-documentation.htm
   baseURL: https://developer.nps.gov/api/v1/
   tags:
+  - Topic
+  tags_raw:
   - Topics
   properties:
   - type: OpenAPI
