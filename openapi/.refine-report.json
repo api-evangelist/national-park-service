@@ -1,17 +1,7 @@
 {
   "provider": "national-park-service",
   "sources": [
-    "national-park-service-activities-api-openapi.yml",
-    "national-park-service-alerts-api-openapi.yml",
-    "national-park-service-articles-api-openapi.yml",
-    "national-park-service-campgrounds-api-openapi.yml",
-    "national-park-service-events-api-openapi.yml",
-    "national-park-service-newsreleases-api-openapi.yml",
-    "national-park-service-parks-api-openapi.yml",
-    "national-park-service-people-api-openapi.yml",
-    "national-park-service-places-api-openapi.yml",
-    "national-park-service-topics-api-openapi.yml",
-    "national-park-service-visitorcenters-api-openapi.yml"
+    "_original/national-park-service-openapi.yml"
   ],
   "outputs": [
     "national-park-service-activities-api-openapi.yml",
@@ -26,9 +16,50 @@
     "national-park-service-topics-api-openapi.yml",
     "national-park-service-visitorcenters-api-openapi.yml"
   ],
-  "archived": [],
+  "archived": [
+    "deleted 2 superseded output(s) from the previous generation"
+  ],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "national-park-service-openapi.yml: upgraded openapi 3.0.3 -> OpenAPI 3.2.0",
+    "national-park-service-openapi.yml: tagged paths GET /parks -> Parks",
+    "national-park-service-openapi.yml: tagged paths GET /alerts -> Alerts",
+    "national-park-service-openapi.yml: tagged paths GET /newsreleases -> Newsreleases",
+    "national-park-service-openapi.yml: tagged paths GET /events -> Events",
+    "national-park-service-openapi.yml: tagged paths GET /places -> Places",
+    "national-park-service-openapi.yml: tagged paths GET /visitorcenters -> Visitorcenters",
+    "national-park-service-openapi.yml: tagged paths GET /campgrounds -> Campgrounds",
+    "national-park-service-openapi.yml: tagged paths GET /articles -> Articles",
+    "national-park-service-openapi.yml: tagged paths GET /people -> People",
+    "national-park-service-openapi.yml: tagged paths GET /activities -> Activities",
+    "national-park-service-openapi.yml: tagged paths GET /topics -> Topics",
+    "national-park-service-openapi.yml: declared missing tag: Activities",
+    "national-park-service-openapi.yml: declared missing tag: Alerts",
+    "national-park-service-openapi.yml: declared missing tag: Articles",
+    "national-park-service-openapi.yml: declared missing tag: Campgrounds",
+    "national-park-service-openapi.yml: declared missing tag: Events",
+    "national-park-service-openapi.yml: declared missing tag: Newsreleases",
+    "national-park-service-openapi.yml: declared missing tag: Parks",
+    "national-park-service-openapi.yml: declared missing tag: People",
+    "national-park-service-openapi.yml: declared missing tag: Places",
+    "national-park-service-openapi.yml: declared missing tag: Topics",
+    "national-park-service-openapi.yml: declared missing tag: Visitorcenters",
+    "superseded outputs removed: national-park-service-news-releases-api-openapi.yml, national-park-service-visitor-centers-api-openapi.yml",
+    "apis.yml register: written (+2 apis, 11 total)"
+  ],
+  "skipped": [
+    "national-park-service-activities-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "national-park-service-alerts-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "national-park-service-articles-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "national-park-service-campgrounds-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "national-park-service-events-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "national-park-service-news-releases-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "national-park-service-parks-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "national-park-service-people-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "national-park-service-places-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "national-park-service-topics-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "national-park-service-visitor-centers-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
