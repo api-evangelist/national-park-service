@@ -38,12 +38,13 @@ modified: '2026-05-19'
 specificationVersion: '0.23'
 tags:
   - Conservation
-  - Federal-Government
+  - Federal Government
   - Parks
 tags_raw:
   - Conservation
   - Federal Government
   - Parks
+  - Federal-Government
 apis:
 - aid: national-park-service:national-park-service-activities-api
   name: National Park Service Activities API
